@@ -1,0 +1,31 @@
+//output: index.php
+
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    // .................................sheets.................................
+    link(rel='stylesheet', href='style/normalize.css')
+    link(rel='stylesheet', href='style/style.min.css')  
+    script(src='js/index.js')
+    script(src='js/consolinfo.js')
+    // .................................Fonts .................................
+    link(href='https://fonts.googleapis.com/css?family=EB+Garamond', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700', rel='stylesheet')
+    // .................................Meta Tags.................................
+    title Color
+    meta(name='Janis Wanger', content='Janis Wanger')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=yes')
+    meta(name='author', content='Janis Wanger')
+    meta(name='description', content='Meine Farben--Janis.')
+    //.................................favicon.................................
+  //.................................start Body.................................
+  body
+    
+    .add
+      form(action='/php/newfile.php' name="form" method="get")
+        input#farbenmput.imput(autocomplete="off" type='text', name='farbe', onfocus="if(this.value == '#A13BF2  |  Rgb(12,33,140)') { this.value = ''; }", value='#A13BF2  |  Rgb(12,33,140)')
+
+    <?php include 'php/main.php'; ?>
+    
+    
